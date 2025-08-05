@@ -1,5 +1,5 @@
 import { useState, FormEvent, ChangeEvent } from "react";
-import { Send, MapPin, Mail } from "lucide-react";
+import { Send, Mail } from "lucide-react";
 import { useTheme } from "@/provider/page";
 
 interface FormData {
