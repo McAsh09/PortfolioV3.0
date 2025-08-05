@@ -4,23 +4,17 @@ import { useTheme } from "@/provider/page";
 import { Marquee } from "@/components/magicui/marquee";
 import {
   Code2,
-  Paintbrush,
   Database,
-  Layout,
   Cpu,
   Cloud,
-  Sparkles,
-  Layers,
   GitBranch,
   Server,
-  Globe,
   FileCode,
-  Figma,
   Github,
   CloudCog,
 } from "lucide-react";
 
-import { FaDocker, FaLinux } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
 import {
   SiTypescript,
@@ -28,7 +22,6 @@ import {
   SiPostgresql,
   SiMongodb,
   SiGraphql,
-  SiJest,
   SiWebpack,
   SiRedux,
   SiFirebase,
@@ -401,12 +394,6 @@ const SkillsSection = () => {
     "
         >
           {skillCategories.map((category, index) => {
-            // Assign grid area names
-            let area = "";
-            if (index === 0) area = "card1";
-            else if (index === 1) area = "card2";
-            else if (index === 2) area = "card3";
-            else if (index === 3) area = "card4";
             return (
               <div
                 key={index}
